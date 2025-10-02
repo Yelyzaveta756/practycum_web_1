@@ -126,7 +126,7 @@ screen and (min-device-pixel-ratio: 2) and (max-width:767px) {
     background-color: #f4e0f4;
     width: 1250px;
     margin: 0 auto;
-    padding: 20px 25px;
+    padding: 20px 25px 0;
     border-radius: 30px 30px 0 0;
     display: flex;
     align-items: center;
@@ -207,6 +207,39 @@ screen and (min-device-pixel-ratio: 2) and (max-width:767px) {
 
 .arrow-text {
     font-size: 18px;
+}
+
+.popular {
+    background-color: #f4e0f4;
+    width: 1250px;
+    margin: 0 auto;
+    padding: 20px 25px;
+}
+
+.popular-title {
+    font-size: 45px;
+    text-align: justify;
+    margin-bottom: 15px;
+    letter-spacing: 0.06em;
+    background: linear-gradient(to right, #f470ca 0%, #db44b8 100%);
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.donut-options {
+    display: flex;
+    gap: 15px;
+    margin-bottom: 15px;
+    text-align: justify;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 1.5;
+    letter-spacing: 0.06em;
+    color: #363745;
+}
+
+.donut-item h4 {
+    font-size: 20px;
 }
 
 .additional-info {
@@ -318,6 +351,31 @@ screen and (min-device-pixel-ratio: 2) and (max-width:767px) {
     
    .about-container {
     width: 400px;
+    margin: 0;
+   }
+}
+
+/* Menu  */
+
+.menu {
+    background-color: #f4e0f4;
+    width: 1250px;
+    margin: 0 auto;
+    padding: 20px 25px;
+    border-radius: 30px 30px 0 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+}
+
+@media screen and (min-resolution: 192dpi) and (max-width:767px), 
+screen and (min-resolution: 2dppx) and (max-width:767px),
+screen and (min-device-pixel-ratio: 2) and (max-width:767px) {
+    
+   .menu {
+    width: 400px;
+    flex-wrap: wrap;
     margin: 0;
    }
 }
