@@ -120,7 +120,7 @@ screen and (min-device-pixel-ratio: 2) and (max-width:767px) {
     }
 }
 
-/* Hero */
+/* Hero (section 1) */
 
 .hero {
     background-color: #f4e0f4;
@@ -209,7 +209,9 @@ screen and (min-device-pixel-ratio: 2) and (max-width:767px) {
     font-size: 18px;
 }
 
-.popular {
+/* Popular Donut (section 2) */
+
+.popular-section {
     background-color: #f4e0f4;
     width: 1250px;
     margin: 0 auto;
@@ -226,7 +228,7 @@ screen and (min-device-pixel-ratio: 2) and (max-width:767px) {
     -webkit-text-fill-color: transparent;
 }
 
-.donut-options {
+.popular-donut-options {
     display: flex;
     gap: 15px;
     margin-bottom: 15px;
@@ -238,9 +240,55 @@ screen and (min-device-pixel-ratio: 2) and (max-width:767px) {
     color: #363745;
 }
 
-.donut-item h4 {
+.popular-donut-item h4 {
     font-size: 20px;
 }
+
+@media screen and (min-resolution: 192dpi) and (max-width:767px), 
+screen and (min-resolution: 2dppx) and (max-width:767px),
+screen and (min-device-pixel-ratio: 2) and (max-width:767px) {
+    
+    .hero-image {
+        margin-bottom: 10px;
+    }
+
+    .hero {
+        width: 400px;
+        flex-wrap: wrap;
+        margin: 0;
+    }
+    .hero-paragraph {
+        padding-bottom: 10px;
+    }
+
+    .arrow-container {
+        margin-top: 0;
+    }
+
+    .popular-section {
+        width: 400px;
+        margin: 0;
+    }
+
+    .popular-donut-options {
+        display: inline-block;
+        margin-bottom: 0;
+    }
+
+    .arrow-container {
+        display: none;
+    }
+
+    .popular-donut-item {
+        margin-bottom: 10px;
+    }
+
+    .popular-donut-item:last-child {
+        margin-bottom: 0;
+    }
+}
+
+/* Overlay  */
 
 .additional-info {
     position: absolute;
@@ -275,13 +323,14 @@ screen and (min-device-pixel-ratio: 2) and (max-width:767px) {
 }
 
 .info-content p {
-    margin-bottom: 16px;
+    margin-bottom: 10px;
     line-height: 1.6;
     color: #555;
 }
 
 .donut-features {
     padding: 0;
+    margin-left: 15px;
 }
 
 .donut-features li {
@@ -294,33 +343,7 @@ screen and (min-device-pixel-ratio: 2) and (max-width:767px) {
     border-bottom: none;
 }
 
-@media screen and (min-resolution: 192dpi) and (max-width:767px), 
-screen and (min-resolution: 2dppx) and (max-width:767px),
-screen and (min-device-pixel-ratio: 2) and (max-width:767px) {
-    
-    .hero-image {
-        margin-bottom: 10px;
-    }
-
-    .hero {
-        width: 400px;
-        flex-wrap: wrap;
-        margin: 0;
-    }
-    .hero-paragraph {
-        padding-bottom: 10px;
-    }
-
-    .arrow-container {
-        margin-top: 0;
-    }
-
-    .additional-info {
-        display: none;
-    }
-}
-
-/* About */
+/* About Page*/
 
 .about-container {
     margin: 0 auto;
@@ -355,7 +378,7 @@ screen and (min-device-pixel-ratio: 2) and (max-width:767px) {
    }
 }
 
-/* Menu  */
+/* Menu Page*/
 
 .menu {
     background-color: #f4e0f4;
@@ -380,7 +403,7 @@ screen and (min-device-pixel-ratio: 2) and (max-width:767px) {
    }
 }
 
-/* Contact */
+/* Contact Page*/
 
 .location-container {
     background: #f4e0f4;
